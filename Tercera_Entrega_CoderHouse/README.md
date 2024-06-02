@@ -9,6 +9,8 @@
 
 1. Clonar el repositorio:
 
+2. Luego ejecutar los siguientes comandos, uno a uno
+
 ```bash
 
 python -m venv env
