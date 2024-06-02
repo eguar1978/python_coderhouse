@@ -1,0 +1,5 @@
+# Ignorar la subida de la DB
+db.sqlite3
+
+# Ignorar el directorio virtual
+env/

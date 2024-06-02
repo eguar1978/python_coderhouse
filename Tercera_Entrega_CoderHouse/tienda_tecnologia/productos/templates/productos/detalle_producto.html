@@ -1,0 +1,14 @@
+{% extends 'productos/base.html' %}
+
+{% block title %}Detalles del Producto{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top: 80px;">
+    <h1>Detalles del {{ tipo|capfirst }}</h1>
+    <h2>{{ producto.marca }} {{ producto.modelo }}</h2>
+    <p>Precio: {{ producto.precio }}</p>
+    <p>Descripción: {{ producto.descripcion }}</p>
+
+
+</div>
+{% endblock %}

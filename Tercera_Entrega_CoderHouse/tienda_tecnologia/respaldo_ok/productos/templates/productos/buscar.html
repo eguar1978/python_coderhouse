@@ -1,0 +1,39 @@
+{% extends 'productos/base.html' %}
+
+{% block title %}Buscar{% endblock %}
+
+{% block content %}
+<h1>Resultados de la búsqueda</h1>
+{% if query %}
+    <p>Resultados para: <strong>{{ query }}</strong></p>
+
+    {% if resultados_celulares %}
+        <h2>Celulares</h2>
+        <ul>
+            {% for celular in resultados_celulares %}
+                <li><a href="{% url 'detalle_producto' 'celular' celular.id %}">{{ celular.marca }} {{ celular.modelo }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if resultados_computadoras %}
+        <h2>Computadoras</h2>
+        <ul>
+            {% for computadora in resultados_computadoras %}
+                <li><a href="{% url 'detalle_producto' 'computadora' computadora.id %}">{{ computadora.marca }} {{ computadora.modelo }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if resultados_televisores %}
+        <h2>Televisores</h2>
+        <ul>
+            {% for televisor in resultados_televisores %}
+                <li><a href="{% url 'detalle_producto' 'televisor' televisor.id %}">{{ televisor.marca }} {{ televisor.modelo }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% else %}
+    <p>No se encontró ninguna búsqueda.</p>
+{% endif %}
+{% endblock %}

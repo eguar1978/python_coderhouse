@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+    background-color: #E5E5E5;
+    color: #202022;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #00747C !important;
+}
+
+.nav-link, .navbar-brand {
+    color: #ffffff !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #00BBC9 !important;
+}
+
+.btn-outline-success {
+    color: #00BBC9;
+    border-color: #00BBC9;
+}
+
+.btn-outline-success:hover {
+    background-color: #00BBC9;
+    color: #ffffff;
+    border-color: #00BBC9;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+h1, h2 {
+    color: #00747C;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #CACACA;
+    margin: 2px 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.nav-item {
+    background-color: #10555a;
+    margin: 2px 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #202022;
+}
+
+ul li a:hover {
+    color: #00BBC9;
+}
+
+.footer {
+    background-color: #202022;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Botón estilo */
+.btn-custom {
+    background-color: #10555a; /* Verde oscuro */
+    color: #ffffff; /* Letra clara */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #124a4e; /* Verde más oscuro al pasar el ratón */
+    color: white;
+}
+
+/* Título de contenido con margen */
+.content-title {
+    margin-top: 20px; /* Ajustar según sea necesario */
+    padding-top: 20px; /* Ajustar según sea necesario */
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #10555a; /* Verde oscuro */
+    color: #ffffff; /* Letra clara */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #124a4e; /* Verde más oscuro al pasar el ratón */
+    color: white;
+}
+
+/* Título de contenido con margen */
+.content-title {
+    margin-top: 20px; /* Ajustar según sea necesario */
+    padding-top: 20px; /* Ajustar según sea necesario */
+}
+
+/* Formulario personalizado */
+.form-custom {
+    background-color: #f7f7f7; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-custom .form-group {
+    margin-bottom: 15px;
+}
+
+.form-custom label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-custom input, 
+.form-custom select, 
+.form-custom textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-custom button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+}

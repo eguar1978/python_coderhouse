@@ -1,0 +1,17 @@
+{% extends 'productos/base.html' %}
+
+{% block title %}Agregar Producto{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="content-title">Agregar {{ tipo|capfirst }}</h1>
+    <form method="post" class="form-custom mt-4">
+        {% csrf_token %}
+        <input type="hidden" name="tipo" value="{{ tipo }}">
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-custom">Guardar</button>
+    </form>
+</div>
+{% endblock %}
